@@ -1,6 +1,9 @@
 h1{
-    color: red;
+    color: green;
 }
 .nombre{
+    font-weight: bold;
+}
+.nameTeam{
     font-weight: bold;
 }

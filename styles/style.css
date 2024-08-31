@@ -1,9 +1,6 @@
-h1{
-    color: green;
+*{
+    box-sizing: border-box;
 }
-.nombre{
-    font-weight: bold;
-}
-.nameTeam{
-    font-weight: bold;
+.container{
+    display: grid;
 }

@@ -1,0 +1,194 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Sección Hero */
+#hero {
+    background-image: linear-gradient(to right, #2ba4a8, #5e797a);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hero .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#hero .hero-content p {
+    font-size: 20px;
+    margin-top: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+#hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#hero img:hover {
+    transform: scale(1.1);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Secciones generales */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #4facfe;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-light {
+    background-color: #f9f9fb;
+    border-top: 2px solid #4facfe;
+    border-bottom: 2px solid #4facfe;
+}
+
+/* Habilidades */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    font-size: 24px;
+    color: #4facfe;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* Hobbies */
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hobby {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobby img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.hobby h3 {
+    font-size: 24px;
+    color: #ff6f61;
+}
+
+.hobby:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+
+
+/* Fondo de la sección "Sobre mí" */
+#hero {
+    position: relative;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('/imagesFra/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Superposición oscura solo para el fondo */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Capa oscura */
+    z-index: 1;
+    pointer-events: none; /* Evita que la capa interfiera con el contenido */
+}
+
+/* Asegurarse de que el contenido esté por encima de la superposición */
+#hero h1,
+#hero p,
+#hero img {
+    position: relative;
+    z-index: 2;
+}

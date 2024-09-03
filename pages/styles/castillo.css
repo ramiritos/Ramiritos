@@ -167,7 +167,7 @@ footer p {
     color: white;
     padding: 60px 20px;
     text-align: center;
-    background-image: url('/imagesFra/fondo.jpg');
+    background-image: url('fondo.jpg');
     background-size: cover;
     background-position: center;
 }

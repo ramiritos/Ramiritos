@@ -93,3 +93,22 @@ else:
 `
 
 # EJERCICIO 5 CUADRADO
+`
+lado = int(input("ingrese el lado"))
+
+## Crear el cuadrado con asteriscos
+for i in range(lado):
+    for j in range(lado):
+        print("* ", end="")
+    print()
+`
+
+# EJERCICIO 6 RAIZ CUADRADA
+
+`
+import math
+numero=int(input("ingrese un numero"))
+raiz = math.sqrt(numero)
+print(f"la raiz de {numero} es:")
+print(raiz)
+`

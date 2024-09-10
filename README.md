@@ -1,7 +1,6 @@
 # Intereses
 
-`
-
+` 
 monto=0
 while monto<=0:
     monto=float(input("Ingrese el monto que desea ingresar a la cuenta: "))

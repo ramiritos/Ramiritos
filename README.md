@@ -1,6 +1,6 @@
-# EJERCICIO 1
+# EJERCICIO 1 - LEER 3 NUMEROS
 
-`
+``` python
 ## Leer tres números
 num1 = int(input("Introduce el primer número: "))
 num2 = int(input("Introduce el segundo número: "))
@@ -13,11 +13,11 @@ numeros.sort()
 ## Imprimir los números ordenados
 print("Números en orden ascendente:", numeros)
 
-`
+```
 
-# EJERCICIO 2 INTERESES
+# EJERCICIO 2 - INTERESES DE C. BANCARIA
 
-` 
+```  python
 monto=0
 while monto<=0:
     monto=float(input("Ingrese el monto que desea ingresar a la cuenta: "))
@@ -36,11 +36,11 @@ def CuentaBancaria(mon,inter,tiem):
 
 resultado = CuentaBancaria(monto,INTERES,tiempo)
 print(f"El interes sería: {resultado}")
-`
+```
 
-# EJERCIO 3 NUMERICAS LITERRALES
+# EJERCIO 3 - NUMERICAS LITERRALES
 
-`
+``` python
 numeros_a_texto = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve',
                    'diez', 'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis',
                    'diecisiete', 'dieciocho', 'diecinueve', 'veinte']
@@ -63,11 +63,11 @@ promedio_texto = numero_a_texto(promedio)
 
 print(f'El promedio de las dos notas es: {promedio} -> {promedio_texto}')
 
-`
+```
 
-# EJERCICIO 4 SEXAGESIMAL
+# EJERCICIO 4 - SEXAGESIMAL
 
-`
+``` python
     import math 
 
 def ConvertiraRadianes(grado_sexa):
@@ -90,10 +90,20 @@ else:
     resultado = ConvertiraRadianes(sexagesiamles)
     print(f"La cantidad en radianes es: "+resultado)
 
-`
+```
 
-# EJERCICIO 5 CUADRADO
-`
+
+# EJERCICIO 5 - RAIZ CUADRADA
+
+``` python
+import math
+numero=int(input("ingrese un numero"))
+raiz = math.sqrt(numero)
+print(f"la raiz de {numero} es:")
+print(raiz)
+```
+# EJERCICIO 6 - CALCULO DE CUADRADO
+``` python
 lado = int(input("ingrese el lado"))
 
 ## Crear el cuadrado con asteriscos
@@ -101,14 +111,4 @@ for i in range(lado):
     for j in range(lado):
         print("* ", end="")
     print()
-`
-
-# EJERCICIO 6 RAIZ CUADRADA
-
-`
-import math
-numero=int(input("ingrese un numero"))
-raiz = math.sqrt(numero)
-print(f"la raiz de {numero} es:")
-print(raiz)
-`
+```

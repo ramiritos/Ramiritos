@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        hr,h2{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <pre>   
+        <h2> EJERCICIO 1 - LEER 3 NUMEROS</h2>
+        <hr>
+        ## Leer tres números
+        num1 = int(input("Introduce el primer número: "))
+        num2 = int(input("Introduce el segundo número: "))
+        num3 = int(input("Introduce el tercer número: "))
+
+        ## Ordenar los números ascendentemente
+        numeros = [num1, num2, num3]
+        numeros.sort()
+
+        ## Imprimir los números ordenados
+        print("Números en orden ascendente:", numeros)
+    </pre>
+    <pre>
+        <h2>EJERCICIO 2 - INTERESES DE C. BANCARIA</h2>
+        <hr>
+        monto=0
+        while monto<=0:
+            monto=float(input("Ingrese el monto que desea ingresar a la cuenta: "))
+            if(monto<=0):
+                print("Error al ingresar el monto")
+        tiempo=0
+        while tiempo<=0:
+            tiempo= int(input("Ingrese el tiempo en años: "))
+            if(tiempo<=0):
+                print("Error al ingresar al tiempo") 
+        INTERES=0.02
+
+        def CuentaBancaria(mon,inter,tiem):
+            interes = mon * inter * tiem
+            return interes
+
+        resultado = CuentaBancaria(monto,INTERES,tiempo)
+        print(f"El interes sería: {resultado}")
+    </pre>
+    <pre>
+        <h2>EJERCIO 3 - NUMERICAS LITERRALES</h2>
+        <hr>
+        numeros_a_texto = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve',
+                        'diez', 'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis',
+                        'diecisiete', 'dieciocho', 'diecinueve', 'veinte']
+
+        def numero_a_texto(n):
+            if 0 <= n <= 20:
+                return numeros_a_texto[n]
+            else:
+                return "Número fuera de rango"
+
+        def promediar_notas(nota1, nota2):
+            return round((nota1 + nota2) / 2)
+
+        nota1 = int(input("Ingresa la primera nota (0-20): "))
+        nota2 = int(input("Ingresa la segunda nota (0-20): "))
+
+        promedio = promediar_notas(nota1, nota2)
+
+        promedio_texto = numero_a_texto(promedio)
+    </pre>
+    <pre>
+        <h2>EJERCICIO 4 - SEXAGESIMAL</h2>
+        <hr>
+            import math 
+
+        def ConvertiraRadianes(grado_sexa):
+            rad = float((grado_sexa * math.pi)/180)
+            return rad
+
+        def ConvertiraSexadeciamles(radian):
+            sexade = float((radian *180)/math.pi)
+            return sexade
+
+        print("Que desa convertir?")
+        respuesta = input("1. Convertir sexagesimales\n2. Convertir a radianes")
+
+        if respuesta == 1:
+            radianes = input("Ingresa la cantidad en radianes: ")
+            resultado = ConvertiraSexadeciamles(radianes)
+            print(f"La cantidad en grados sexagesimales es: "+resultado)
+        else:
+            sexagesiamles = input("Ingresa los grados sexagesimales")
+            resultado = ConvertiraRadianes(sexagesiamles)
+            print(f"La cantidad en radianes es: "+resultado)
+    </pre>
+    <pre>
+        <h2>EJERCICIO 5 - RAIZ CUADRADA</h2>
+        <hr>
+        import math
+        numero=int(input("ingrese un numero"))
+        raiz = math.sqrt(numero)
+        print(f"la raiz de {numero} es:")
+        print(raiz)
+    </pre>
+    <pre>
+        <h2>EJERCICIO 6 - CALCULO DE CUADRADO</h2>
+        <hr>
+        lado = int(input("ingrese el lado"))
+
+        ## Crear el cuadrado con asteriscos
+        for i in range(lado):
+            for j in range(lado):
+                print("* ", end="")
+            print()
+    </pre>
+</body>
+</html>

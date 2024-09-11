@@ -6,12 +6,11 @@
 }
 body{
     display: grid;
-    height: 100vh;
+    height: 80vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-    max-width: 75%;
-    /* height: 80%; */
+    max-width: 90%;
     display: grid;
     grid-template-columns: 1fr 1.6fr;
     grid-template-rows: 9fr 1fr;
@@ -111,3 +110,27 @@ footer{
     border-radius: 50%;
     margin-right: .5em;
   }
+
+.estado{
+  font-weight: bold;
+
+}
+.revisado{
+  color: green;
+  text-decoration: line-through;
+}
+.calificar{
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: .3em 1em;
+  background-color: #fce627;
+  color: black;
+  margin: 0 .5em;
+  border-radius: .3em;
+}
+.calificar:hover{
+  background-color: #e7ca24;
+}
+li{
+  line-height: 2em;
+}
